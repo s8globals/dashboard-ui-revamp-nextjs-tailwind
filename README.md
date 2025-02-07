@@ -41,7 +41,7 @@ This project is a **modern, fully responsive dashboard UI** designed using **Nex
 ### **Installation**  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/dashboard-redesign.git
+   git clone https://github.com/s8globals/dashboard-redesign.git
    cd dashboard-redesign
    ```
 2. Install dependencies:  
