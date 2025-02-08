@@ -19,3 +19,37 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar Item Styling */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  transition: all 0.3s;
+  color: white;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Mobile Sidebar Animation */
+@media (max-width: 1024px) {
+  aside {
+    transition: transform 0.3s ease-in-out;
+  }
+}
