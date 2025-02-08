@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
 import DashboardCards from "@/components/DashboardCards";
+import DashboardStats from "@/components/DashboardStats";
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -20,13 +21,14 @@ const Dashboard = () => {
         <Navbar toggleSidebar={toggleSidebar} />
 
         {/* Dashboard Content */}
-        <main className="p-6">
+        <main className="p-6 absolute">
           
           <div className="p-6">
             <h2 className="text-2xl font-semibold text-white mb-6">
               Dashboard Overview
             </h2>
             <DashboardCards />
+            <DashboardStats/>
           </div>
         </main>
       </div>
