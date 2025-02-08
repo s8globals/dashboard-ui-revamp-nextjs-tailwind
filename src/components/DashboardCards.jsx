@@ -10,7 +10,7 @@ const DashboardCards = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-900 min-h-screen">
+    <div className="glass p-6 bg-gray-900 min-h-screen">
       {/* Section Title */}
       <h2 className="text-2xl font-semibold text-white mb-6">Sales Distribution</h2>
 
