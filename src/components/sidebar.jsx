@@ -1,4 +1,5 @@
-import { FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { FaTimes, FaHome, FaChartBar, FaEnvelope, FaCog, FaSignOutAlt} from "react-icons/fa";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -15,13 +16,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       </div>
 
       {/* Sidebar Items */}
-      <ul className="p-4 text-white space-y-4">
-        <li className="hover:text-gray-300 cursor-pointer">Dashboard</li>
-        <li className="hover:text-gray-300 cursor-pointer">Analytics</li>
-        <li className="hover:text-gray-300 cursor-pointer">Users</li>
-        <li className="hover:text-gray-300 cursor-pointer">Reports</li>
-        <li className="hover:text-gray-300 cursor-pointer">Settings</li>
-      </ul>
+     
+      <ul className="space-y-6 p-4 text-white">
+          <li className="sidebar-item hover:text-gray-300 cursor-pointer"><FaHome /> Dashboard</li>
+          <li className="sidebar-item hover:text-gray-300 cursor-pointer"><FaChartBar /> Analytics</li>
+          <li className="sidebar-item hover:text-gray-300 cursor-pointer"><FaEnvelope /> Messages</li>
+          <li className="sidebar-item hover:text-gray-300 cursor-pointer"><FaCog /> Settings</li>
+          <li className="sidebar-item hover:text-gray-300 cursor-pointer text-red-500"><FaSignOutAlt /> Logout</li>
+        </ul>
     </aside>
   );
 };

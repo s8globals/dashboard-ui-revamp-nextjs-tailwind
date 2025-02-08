@@ -18,6 +18,7 @@ const Navbar = ({ toggleSidebar }) => {
         <li className="hover:text-gray-300 cursor-pointer">Settings</li>
         <li className="hover:text-gray-300 cursor-pointer">Logout</li>
       </ul>
+      
     </nav>
   );
 };
